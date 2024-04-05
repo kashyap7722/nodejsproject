@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/theater.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #0f0f1a !important; */
+  color: #fff !important;
+  font-family: Arial, sans-serif !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  background: rgba( 6, 0, 0, 0.65 ) !important;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+  backdrop-filter: blur( 8px )!important;
+  -webkit-backdrop-filter: blur( 8px )!important;
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 )!important;
+  /* background-color: #1e213a !important;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 4px solid #19d4ca !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important; */
+}
+ 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc !important;
+  color: #fff !important;
+  transition: box-shadow 0.3s !important;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #19d4ca !important;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+input::placeholder{
+  color: antiquewhite;
+  font-weight: bolder;
+}
+.login-button,
+.register-link {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: transparent !important;
+  color: #19d4ca !important;
+}
+
+.login-button:hover {
+  background-color: #19d4ca !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.login-button:active {
+  box-shadow: 0 0 10px #19d4ca !important;
+}
+
+.register-link {
+  color: #ccc !important;
+  background-color: transparent !important;
+}
+
+.register-link:hover {
+  color: #fff !important;
+}
+
+.register-link:active {
+  box-shadow: 0 0 10px #ccc !important;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+
