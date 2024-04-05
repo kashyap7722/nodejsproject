@@ -1,0 +1,5 @@
+.bx{
+    box-shadow: 8px 4px 34px 0px rgba(110,57,57,0.74);
+-webkit-box-shadow: 8px 4px 34px 0px rgba(110,57,57,0.74);
+-moz-box-shadow: 8px 4px 34px 0px rgba(110,57,57,0.74);
+}
